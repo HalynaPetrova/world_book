@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>Ласкова просимо в магазин Світ книг. </h2>
+    <h2>Загальна інформація щодо магазину</h2>
+    <p>База даних сайту "Світ книг" має наступну кількість записів:</p>
+    <ul>
+    <li><strong>Кількість книг у магазині: </strong>{{ num_books }}</li>
+        <li><strong>Кількість екземплярів книг у магазині: </strong>{{ num_instances }}</li>
+        <li><strong>Кількість екземплярів книг в заказі: </strong>{{ num_instances_available }}</li>
+        <li><strong>Кількість авторів книг: </strong>{{ num_authors }}</li>
+    </ul>
+
+    <p>Кількість відвідувань сайту складає: {{ num_visits }}</p>
+{% endblock %}
